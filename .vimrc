@@ -54,6 +54,7 @@ set novisualbell            " Disable error visual bell
 set t_vb=                   " Disable error bell
 set clipboard=unnamedplus   " Simplified copypaste
 set foldmethod=indent       " Fold on indented blocks
+set foldnestmax=2           " Set max nested fold level
 
 " Theme
 syntax on
