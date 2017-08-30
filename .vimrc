@@ -47,7 +47,7 @@ set foldnestmax=2           " Set max nested fold level
 
 " Theme
 syntax on
-colorscheme molokai
+colorscheme harlequin
 let g:rehash256 = 1
 
 " Language settings
