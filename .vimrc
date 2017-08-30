@@ -6,17 +6,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     au VimEnter * PlugInstall
 endif
 
-" Use true colors
-if (empty($TMUX))
-    if (has("nvim"))
-        let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    endif
-    if (has("termguicolors"))
-        set termguicolors
-    endif
-endif
-
-
 " Plugins using vim-plug
 call plug#begin('~/.vim/plugged')
 
