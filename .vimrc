@@ -44,6 +44,7 @@ set t_vb=                   " Disable error bell
 set clipboard=unnamedplus   " Simplified copypaste
 set foldmethod=indent       " Fold on indented blocks
 set foldnestmax=2           " Set max nested fold level
+set hidden                  " Allow to hide modified buffer
 
 " Theme
 syntax on
@@ -58,6 +59,9 @@ set langmenu=en
 " Airline Setup
 let g:airline_theme = 'molokai'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1 " Enable buffer listing
+let g:airline#extensions#tabline#fnamemod = ':t' " But show just the filename
+
 
 " Airline symbols
 if !exists('g:airline_symbols')
