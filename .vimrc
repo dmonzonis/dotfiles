@@ -81,7 +81,6 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 let g:NerdTrimTrailingWhitespace = 1
