@@ -110,6 +110,7 @@ map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 map <leader>r :call NumberToggle()<CR>
 map <leader>p :bp<CR>
 map <leader>n :bn<CR>
+map <leader>d :bd<CR>
 " FZF
 nnoremap <C-p>a :Ag
 nnoremap <C-p>b :Buffers<CR>
