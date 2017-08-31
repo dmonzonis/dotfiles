@@ -8,6 +8,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '             # Custom prompt
 set -o vi                       # Set Vi mode
+stty -ixon                      # Disable software flow control
 export LC_ALL="en_US.UTF-8"     # Locale setting
 export EDITOR=vim               # Default editor
 
