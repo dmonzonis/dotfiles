@@ -49,7 +49,7 @@ set hidden                  " Allow to hide modified buffer
 
 " Theme
 syntax on
-colorscheme harlequin
+colorscheme molokai
 let g:rehash256 = 1
 
 " Language settings
