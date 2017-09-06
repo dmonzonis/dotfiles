@@ -92,6 +92,8 @@ let g:delimitMate_expand_cr = 1
 " UltiSnips
 let g:UltiSnipsExpandTrigger = "<C-j>"
 let g:UltiSnipsListSnippets = "<C-l>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<C-e>"
 
 " Enable filetype plugins
 filetype plugin on
