@@ -23,6 +23,7 @@ Plug 'tpope/vim-fugitive'                   " Git wrapper for vim
 Plug 'oblitum/YouCompleteMe', { 'do': 'python ./install.py --clang-completer' } " Autocompleter
 Plug 'Raimondi/delimitMate'                 " Automatic closing of brackets
 Plug 'SirVer/ultisnips'                     " Automatically generate code snippets
+Plug 'honza/vim-snippets'                   " Add snippets for UltiSnips for different languages
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} " Fuzzy file finder for bash and vim
 Plug 'junegunn/fzf.vim'
 
@@ -87,6 +88,10 @@ let g:NerdTrimTrailingWhitespace = 1
 
 " DelimitMate
 let g:delimitMate_expand_cr = 1
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger = "<C-j>"
+let g:UltiSnipsListSnippets = "<C-l>"
 
 " Enable filetype plugins
 filetype plugin on
