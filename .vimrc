@@ -47,6 +47,16 @@ set foldmethod=indent       " Fold on indented blocks
 set foldnestmax=2           " Set max nested fold level
 set hidden                  " Allow to hide modified buffer
 
+" Allow persistent undo using an undo history file (undofile)
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
+endif
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700) " Permissions only for owner
+endif
+set undodir=~/.vim/undo-dir
+set undofile
+
 " Theme
 syntax on
 colorscheme molokai
