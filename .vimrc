@@ -112,12 +112,13 @@ let g:UltiSnipsJumpBackwardTrigger = "<C-e>"
 filetype plugin on
 filetype indent on
 
+" Toggle between absolute and relative line numbering
 func! NumberToggle()
     if(&relativenumber == 1)
-    set nornu
-    set number
+        set nornu
+        set number
     else
-    set rnu
+        set rnu
     endif
 endfunc
 
