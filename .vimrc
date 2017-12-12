@@ -26,6 +26,7 @@ Plug 'honza/vim-snippets'                   " Add snippets for UltiSnips for dif
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} " Fuzzy file finder for bash and vim
 Plug 'junegunn/fzf.vim'
 Plug 'python-mode/python-mode'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -68,7 +69,7 @@ let $LANG='en'
 set langmenu=en
 
 " Airline Setup
-let g:airline_theme = 'molokai'
+let g:airline_theme = 'gruvbox'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1 " Enable buffer listing
 let g:airline#extensions#tabline#fnamemod = ':t' " But show just the filename
