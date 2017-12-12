@@ -26,6 +26,7 @@ Plug 'SirVer/ultisnips'                     " Automatically generate code snippe
 Plug 'honza/vim-snippets'                   " Add snippets for UltiSnips for different languages
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} " Fuzzy file finder for bash and vim
 Plug 'junegunn/fzf.vim'
+Plug 'python-mode/python-mode'
 
 call plug#end()
 
@@ -58,7 +59,6 @@ set undodir=~/.vim/undo-dir
 set undofile
 
 " Theme
-syntax on
 colorscheme molokai
 let g:rehash256 = 1
 
@@ -74,7 +74,7 @@ let g:airline#extensions#tabline#enabled = 1 " Enable buffer listing
 let g:airline#extensions#tabline#fnamemod = ':t' " But show just the filename
 
 " Syntastic Setup
-let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checkers=['flake8', 'pydocstyle']
 let g:syntastic_python_flake8_args='--ignore=E501' " Ignore line too long
 
 " Airline symbols
@@ -108,9 +108,18 @@ let g:UltiSnipsListSnippets = "<C-l>"
 let g:UltiSnipsJumpForwardTrigger = "<C-k>"
 let g:UltiSnipsJumpBackwardTrigger = "<C-e>"
 
+" Python-mode
+let g:pymode_python = 'python3'
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_print_as_function = 0
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
+
+" Enable syntax highlighting
+syntax on
 
 " Toggle between absolute and relative line numbering
 func! NumberToggle()
@@ -147,6 +156,3 @@ nnoremap <C-p>t :Tags<CR>
 " Autocmd
 autocmd bufwritepre *.cpp ClangFormat
 autocmd bufwritepre *.h ClangFormat
-
-
-
