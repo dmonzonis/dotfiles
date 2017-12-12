@@ -108,11 +108,15 @@ let g:UltiSnipsListSnippets = "<C-l>"
 let g:UltiSnipsJumpForwardTrigger = "<C-k>"
 let g:UltiSnipsJumpBackwardTrigger = "<C-e>"
 
-" Python-mode
+""" Python-mode
 let g:pymode_python = 'python3'
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 1
-let g:pymode_syntax_print_as_function = 0
+let g:pymode_options_max_line_length = 99
+let g:pymode_run_bind = '<F5>'
+" Disable stuff
+let g:pymode_breakpoint = 0
+let g:pymode_lint = 0
+let g:pymode_rope = 0
+let g:pymode_rope_completion = 0
 
 " Enable filetype plugins
 filetype plugin on
