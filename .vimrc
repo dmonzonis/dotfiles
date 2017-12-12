@@ -12,7 +12,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'flazz/vim-colorschemes'               " Add lots of cholorschemes
 Plug 'vim-airline/vim-airline'              " Lean & mean status/tabline for vim
 Plug 'vim-airline/vim-airline-themes'       " Collection of themes for vim-airline
-Plug 'sheerun/vim-polyglot'                 " Collection of language packs
 Plug 'scrooloose/nerdcommenter'             " Easier commenting
 Plug 'vim-syntastic/syntastic'              " Syntax checker
 Plug 'rhysd/vim-clang-format'               " Format code using clang-format (required)
@@ -59,7 +58,8 @@ set undodir=~/.vim/undo-dir
 set undofile
 
 " Theme
-colorscheme molokai
+set background=dark
+colorscheme gruvbox
 let g:rehash256 = 1
 
 " Language settings
