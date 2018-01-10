@@ -16,6 +16,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vi='vim'
 alias gs='git status'
+alias sudo='sudo '
+alias pacopt='~/scripts/pacopt.sh'
 
 # Colored manpages
 man() {
