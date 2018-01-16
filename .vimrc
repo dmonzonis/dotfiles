@@ -145,6 +145,8 @@ map <leader>r :call NumberToggle()<CR>
 map <leader>p :bp<CR>
 map <leader>n :bn<CR>
 map <leader>d :bd<CR>
+nnoremap <F5> "=strftime("%d/%m/%y %H:%M")<CR>P
+inoremap <F5> <C-R>=strftime("%d/%m/%y %H:%M")<CR>
 " FZF
 nnoremap <C-p>a :Ag
 nnoremap <C-p>b :Buffers<CR>
