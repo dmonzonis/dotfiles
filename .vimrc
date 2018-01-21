@@ -102,6 +102,8 @@ let g:NerdTrimTrailingWhitespace = 1
 
 " DelimitMate
 let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_inside_quotes = 1
+au FileType python let b:delimitMate_nesting_quotes = ['"']
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger = "<C-j>"
