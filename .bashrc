@@ -5,7 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '             # Custom prompt
 set -o vi                       # Set Vi mode
 stty -ixon                      # Disable software flow control
 export LC_ALL="en_US.UTF-8"     # Locale setting
@@ -50,6 +49,16 @@ if [ "$TERM" = "linux" ]; then
     printf '\033]PFE6D7AB'; # brighter white
     clear;
 fi;
+
+# Use colorful prompt
+if [[ ${EUID} == 0 ]]; then
+    PS1='\[\033[01;31m\]\h\[\033[01;34m\] \w \$\[\033[00m\] '
+else
+    PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
+fi
+
+# Path
+export PATH=$PATH:~/.local/bin
 
 function weather {
   curl -s wttr.in/$1
