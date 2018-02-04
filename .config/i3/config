@@ -160,3 +160,6 @@ exec --no-startup-id feh --bg-fill ~/Pictures/i3wallpaper.jpg
 
 # No borders or title bar
 new_window pixel 1
+
+# Use Spanish keyboard layout
+exec "setxkbmap -layout es"
