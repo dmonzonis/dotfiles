@@ -163,3 +163,6 @@ new_window pixel 1
 
 # Use Spanish keyboard layout
 exec "setxkbmap -layout es"
+
+# Enable NetworkManager applet
+exec --no-startup-id nm-applet
