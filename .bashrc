@@ -17,6 +17,7 @@ alias vi='vim'
 alias gs='git status'
 alias sudo='sudo '
 alias pacopt='~/scripts/pacopt.sh'
+alias i3lock='~/scripts/i3pixlock.sh'
 
 # Colored manpages
 man() {
