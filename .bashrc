@@ -30,6 +30,10 @@ man() {
     command man "$@"
 }
 
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 # Set custom dark theme for tty terminals
 if [ "$TERM" = "linux" ]; then
     printf '\033]P01a1813'; # black
@@ -52,14 +56,11 @@ if [ "$TERM" = "linux" ]; then
 fi;
 
 # Use colorful prompt
-if [[ ${EUID} == 0 ]]; then
-    PS1='\[\033[01;31m\]\h\[\033[01;34m\] \w \$\[\033[00m\] '
-else
-    PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
-fi
+PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ '
 
 # Path
-export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.local/bin:/sbin
+export GPG_TTY=$(tty)
 
 function weather {
   curl -s wttr.in/$1
