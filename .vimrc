@@ -75,7 +75,7 @@ let g:airline#extensions#tabline#enabled = 1 " Enable buffer listing
 let g:airline#extensions#tabline#fnamemod = ':t' " But show just the filename
 
 " Syntastic Setup
-let g:syntastic_python_checkers=['flake8', 'pydocstyle']
+let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args='--ignore=E501' " Ignore line too long
 
 " Airline symbols
