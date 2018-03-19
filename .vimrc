@@ -163,5 +163,5 @@ nnoremap <C-p>m :Marks<CR>
 nnoremap <C-p>t :Tags<CR>
 
 " Autocmd
-autocmd bufwritepre *.cpp ClangFormat
-autocmd bufwritepre *.h ClangFormat
+"autocmd bufwritepre *.cpp ClangFormat
+"autocmd bufwritepre *.h ClangFormat
