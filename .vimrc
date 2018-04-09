@@ -75,8 +75,9 @@ let g:airline#extensions#tabline#enabled = 1 " Enable buffer listing
 let g:airline#extensions#tabline#fnamemod = ':t' " But show just the filename
 
 " Syntastic Setup
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501' " Ignore line too long
+let g:syntastic_check_on_open = 1
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_args = '--ignore=E501' " Ignore line too long
 
 " Airline symbols
 if !exists('g:airline_symbols')
@@ -93,6 +94,7 @@ let g:airline_symbols.branch = '⎇'
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_show_diagnostics_ui = 0
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
