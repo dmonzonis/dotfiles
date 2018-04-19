@@ -25,8 +25,8 @@ Plug 'SirVer/ultisnips'                     " Automatically generate code snippe
 Plug 'honza/vim-snippets'                   " Add snippets for UltiSnips for different languages
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} " Fuzzy file finder for bash and vim
 Plug 'junegunn/fzf.vim'
-Plug 'python-mode/python-mode'
-Plug 'morhetz/gruvbox'
+Plug 'python-mode/python-mode'              " Bunch of utilities for python
+Plug 'morhetz/gruvbox'                      " Theme
 
 call plug#end()
 
