@@ -18,6 +18,7 @@ alias gs='git status'
 alias sudo='sudo '
 alias pacopt='~/scripts/pacopt.sh'
 alias i3lock='~/scripts/i3pixlock.sh'
+alias python='python3'
 
 # Colored manpages
 man() {
