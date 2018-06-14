@@ -31,6 +31,7 @@ man() {
     command man "$@"
 }
 
+# Get git branch name in current directory
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -63,8 +64,13 @@ PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W\[\033[33m\]$(parse_git_branch)\[\033
 export PATH=$PATH:~/.local/bin:/sbin
 export GPG_TTY=$(tty)
 
+# Output weather info. Give location name as arg for other locations.
 function weather {
   curl -s wttr.in/$1
 }
 
+# Load fzf bashrc
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Add alias of function fuck from the thefuck script
+eval $(thefuck --alias)
