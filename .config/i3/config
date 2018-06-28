@@ -160,7 +160,7 @@ bar {
 bindsym $alt+Control+l exec ~/scripts/i3pixlock.sh
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/i3wallpaper.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/i3wallpaper.jpg
 
 # No borders or title bar
 new_window pixel 1

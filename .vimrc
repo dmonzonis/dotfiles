@@ -76,6 +76,7 @@ let g:airline#extensions#tabline#fnamemod = ':t' " But show just the filename
 
 " Syntastic Setup
 let g:syntastic_check_on_open = 1
+let g:syntastic_cpp_checkers = ['clang_tidy']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args = '--ignore=E501' " Ignore line too long
 
