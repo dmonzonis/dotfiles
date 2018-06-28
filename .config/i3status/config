@@ -20,7 +20,7 @@ order += "volume master"
 order += "tztime local"
 
 disk "/" {
-    format = "HDD: %free/%total"
+    format = "HDD: %free (%total)"
 }
 
 wireless _first_ {
