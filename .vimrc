@@ -16,9 +16,7 @@ Plug 'scrooloose/nerdcommenter'             " Easier commenting
 Plug 'vim-syntastic/syntastic'              " Syntax checker
 Plug 'rhysd/vim-clang-format'               " Format code using clang-format (required)
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespace
-Plug 'tpope/vim-surround'                   " Mappings for treating brackets, quotes, etc in pairs
 Plug 'terryma/vim-multiple-cursors'         " Multiple cursor support
-Plug 'tpope/vim-fugitive'                   " Git wrapper for vim
 Plug 'oblitum/YouCompleteMe', { 'do': 'python ./install.py --clang-completer' } " Autocompleter
 Plug 'Raimondi/delimitMate'                 " Automatic closing of brackets
 Plug 'SirVer/ultisnips'                     " Automatically generate code snippets
