@@ -16,7 +16,6 @@ Plug 'scrooloose/nerdcommenter'             " Easier commenting
 Plug 'vim-syntastic/syntastic'              " Syntax checker
 Plug 'rhysd/vim-clang-format'               " Format code using clang-format (required)
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespace
-Plug 'terryma/vim-multiple-cursors'         " Multiple cursor support
 Plug 'oblitum/YouCompleteMe', { 'do': 'python ./install.py --clang-completer' } " Autocompleter
 Plug 'Raimondi/delimitMate'                 " Automatic closing of brackets
 Plug 'SirVer/ultisnips'                     " Automatically generate code snippets
@@ -25,6 +24,7 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} " Fuzzy file fin
 Plug 'junegunn/fzf.vim'
 Plug 'python-mode/python-mode'              " Bunch of utilities for python
 Plug 'morhetz/gruvbox'                      " Theme
+Plug 'yggdroot/indentline'                  " Show vertical line on indented lines
 
 call plug#end()
 
