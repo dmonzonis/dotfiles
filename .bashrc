@@ -22,11 +22,9 @@ export EDITOR=vim               # Default editor
 # Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias vi='vim'
 alias gs='git status'
 alias sudo='sudo '
 alias pacopt='~/scripts/pacopt.sh'
-alias i3lock='~/scripts/i3pixlock.sh'
 alias python='python3'
 
 # Colored manpages
