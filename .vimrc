@@ -13,10 +13,9 @@ Plug 'flazz/vim-colorschemes'               " Add lots of cholorschemes
 Plug 'vim-airline/vim-airline'              " Lean & mean status/tabline for vim
 Plug 'vim-airline/vim-airline-themes'       " Collection of themes for vim-airline
 Plug 'scrooloose/nerdcommenter'             " Easier commenting
-Plug 'vim-syntastic/syntastic'              " Syntax checker
+" Plug 'vim-syntastic/syntastic'              " Syntax checker
 Plug 'rhysd/vim-clang-format'               " Format code using clang-format (required)
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespace
-Plug 'oblitum/YouCompleteMe', { 'do': 'python ./install.py --clang-completer' } " Autocompleter
 Plug 'Raimondi/delimitMate'                 " Automatic closing of brackets
 Plug 'SirVer/ultisnips'                     " Automatically generate code snippets
 Plug 'honza/vim-snippets'                   " Add snippets for UltiSnips for different languages
@@ -25,6 +24,15 @@ Plug 'junegunn/fzf.vim'
 Plug 'python-mode/python-mode'              " Bunch of utilities for python
 Plug 'morhetz/gruvbox'                      " Theme
 Plug 'yggdroot/indentline'                  " Show vertical line on indented lines
+Plug 'lervag/vimtex'                        " Utilities for LaTeX
+Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}  " LSP support
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 call plug#end()
 
@@ -89,11 +97,17 @@ let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = '⎇'
 
-" YouCompleteMe Setup
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_show_diagnostics_ui = 0
+" LanguageClient
+let g:LanguageClient_serverCommands = {
+            \ 'python': ['pyls'],
+            \ 'cpp': ['~/cquery/build/release/bin/cquery',
+            \ '--log-file=/tmp/cq.log', '--init=("cacheDirectory":"/var/cquery/")']
+            \ }
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+set completeopt-=preview
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
