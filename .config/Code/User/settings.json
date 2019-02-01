@@ -1,0 +1,21 @@
+{
+    "breadcrumbs.enabled": true,
+    "diffEditor.renderSideBySide": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "workbench.statusBar.feedback.visible": false,
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "cmake.configureOnOpen": false,
+    "python.jediEnabled": false,
+    "c-cpp-flylint.flexelint.enable": false,
+    "code-runner.fileDirectoryAsCwd": true,
+    "python.linting.flake8CategorySeverity.F": "Information",
+    "python.linting.flake8Enabled": true,
+    "python.terminal.executeInFileDir": true,
+    "terminal.integrated.rendererType": "dom",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "code-runner.enableAppInsights": false
+}
