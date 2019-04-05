@@ -9,7 +9,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "cmake.configureOnOpen": false,
     "python.jediEnabled": false,
-    "c-cpp-flylint.flexelint.enable": false,
     "code-runner.fileDirectoryAsCwd": true,
     "python.linting.flake8CategorySeverity.F": "Information",
     "python.linting.flake8Enabled": true,
@@ -19,5 +18,9 @@
     "telemetry.enableTelemetry": false,
     "code-runner.enableAppInsights": false,
     "editor.detectIndentation": false,
-    "python.linting.flake8Args": ["--ignore=E501"]
+    "python.linting.flake8Args": [
+        "--ignore=E501"
+    ],
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Gruvbox Dark (Hard)"
 }
