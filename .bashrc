@@ -81,3 +81,8 @@ function weather {
 
 # Add alias of function fuck from the thefuck script
 eval $(thefuck --alias)
+
+# Add pyenv to PATH
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
