@@ -26,6 +26,10 @@ alias gs='git status'
 alias sudo='sudo '
 alias pacopt='~/scripts/pacopt.sh'
 alias python='python3'
+# Use st with tmux only if tmux is installed
+if hash tmux 2>/dev/null; then
+    alias st='st -e tmux'
+fi
 
 # Colored manpages
 man() {
