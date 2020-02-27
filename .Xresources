@@ -32,7 +32,7 @@ URxvt.font: xft:Hack:style=Regular:size=10
 URxvt.boldFont: xft:Hack:style=Bold:size=10
 URxvt.italicFont: xft:Hack:style=Italic:size=10
 URxvt.boldItalicFont: xft:Hack:style=Bold Italic:size=10
-URxvt:letterSpace: 0
+URxvt.letterSpace: -1
 URxvt.lineSpace: 0
 URxvt.internalBorder: 5
 URxvt.cursorBlink: true
