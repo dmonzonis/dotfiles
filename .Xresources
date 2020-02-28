@@ -3,6 +3,7 @@ URxvt*cursorColor: #25c3dc
 URxvt*pointerColor: #25c3dc
 URxvt.foreground: #f2f2f2
 URxvt.background: #1C1C1C
+URxvt.borderColor: #1C1C1C
 ! black
 URxvt.color0: #2c2c2c
 URxvt.color8: #969694
