@@ -153,6 +153,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        position top
         status_command i3status
 }
 
@@ -168,8 +169,8 @@ new_window pixel 1
 # Use Spanish keyboard layout
 exec "setxkbmap -layout es"
 
-# Enable NetworkManager applet
-exec --no-startup-id nm-applet
+# Enable redshift to soften screen colors depending on the time of the day
+exec --no-startup-id redshift
 
 # Pulseaudio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%  #increase sound volume
