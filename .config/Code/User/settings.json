@@ -26,6 +26,9 @@
     "[python]": {},
     "editor.fontFamily": "Hack",
     "gitlens.currentLine.enabled": false,
+    "editor.fontSize": 12,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "githd.blameView.enabled": false,
     "gitlens.advanced.telemetry.enabled": false,
-    "editor.fontSize": 12
+    "gitlens.codeLens.enabled": false
 }
