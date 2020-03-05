@@ -30,5 +30,25 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "githd.blameView.enabled": false,
     "gitlens.advanced.telemetry.enabled": false,
-    "gitlens.codeLens.enabled": false
+    "gitlens.codeLens.enabled": false,
+    "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
+    "xmlTools.splitAttributesOnFormat": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100"
+    ],
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.highlights.enabled": false,
+    "githd.logView.displayExpressStatus": false,
+    "githd.editor.disabled": true,
+    "gitHistory.showEditorTitleMenuBarIcons": false,
+    "gitlens.liveshare.allowGuestAccess": false,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "update.showReleaseNotes": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.menus": {
+        "editorGroup": {
+            "blame": false,
+            "compare": false
+        }
+    }
 }
