@@ -32,10 +32,10 @@
     "gitlens.advanced.telemetry.enabled": false,
     "gitlens.codeLens.enabled": false,
     "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
-    "xmlTools.splitAttributesOnFormat": true,
     "python.formatting.autopep8Args": [
         "--max-line-length=100"
     ],
+    "explorer.autoReveal": false,
     "todo-tree.tree.showScanModeButton": false,
     "todo-tree.highlights.enabled": false,
     "githd.logView.displayExpressStatus": false,
@@ -50,5 +50,11 @@
             "blame": false,
             "compare": false
         }
-    }
+    },
+    "debug.console.closeOnEnd": true,
+    "debug.console.fontSize": 12,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "debug.toolBarLocation": "docked",
+    "window.zoomLevel": 0,
+    "files.insertFinalNewline": true
 }
