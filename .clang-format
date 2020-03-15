@@ -1,0 +1,41 @@
+BasedOnStyle: LLVM
+BreakBeforeBraces: Allman
+IndentCaseLabels: false
+IndentWidth: 4
+SortIncludes: true
+TabWidth: 4
+ColumnLimit: 90
+KeepEmptyLinesAtTheStartOfBlocks: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortLoopsOnASingleLine: false
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+PointerAlignment: Right
+SpacesBeforeTrailingComments: 2
+AccessModifierOffset: -4
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignTrailingComments: false
+BreakConstructorInitializers: BeforeComma
+BinPackArguments: false
+BinPackParameters: false
+AlwaysBreakTemplateDeclarations: true
+FixNamespaceComments: true
+PenaltyReturnTypeOnItsOwnLine: 150
+IncludeBlocks: Regroup
+IncludeCategories:
+ - Regex:           '<lazarus.*'
+   Priority:        0
+ - Regex:           '^"(llvm|llvm-c|clang|clang-c)/'
+   Priority:        2
+ - Regex:           '^(<|"(gtest|gmock|isl|json)/)'
+   Priority:        3
+ - Regex:           '<[[:alnum:].]+>'
+   Priority:        4
+ - Regex:           '.*'
+   Priority:        1
+Language: Cpp
+
