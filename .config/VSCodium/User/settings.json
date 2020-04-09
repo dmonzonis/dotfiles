@@ -56,5 +56,13 @@
     "debug.showBreakpointsInOverviewRuler": true,
     "debug.toolBarLocation": "docked",
     "window.zoomLevel": 0,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "debug.openDebug": "neverOpen",
+    "scssFormatter.tabWidth": 4,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust"
+    },
+    "update.mode": "manual",
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.scrollBeyondLastLine": false,
 }
