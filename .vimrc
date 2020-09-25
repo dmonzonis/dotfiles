@@ -13,7 +13,7 @@ Plug 'flazz/vim-colorschemes'               " Add lots of cholorschemes
 Plug 'vim-airline/vim-airline'              " Lean & mean status/tabline for vim
 Plug 'vim-airline/vim-airline-themes'       " Collection of themes for vim-airline
 Plug 'scrooloose/nerdcommenter'             " Easier commenting
-" Plug 'vim-syntastic/syntastic'              " Syntax checker
+Plug 'vim-syntastic/syntastic'              " Syntax checker
 Plug 'rhysd/vim-clang-format'               " Format code using clang-format (required)
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespace
 Plug 'Raimondi/delimitMate'                 " Automatic closing of brackets
@@ -26,13 +26,6 @@ Plug 'morhetz/gruvbox'                      " Theme
 Plug 'yggdroot/indentline'                  " Show vertical line on indented lines
 Plug 'lervag/vimtex'                        " Utilities for LaTeX
 Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}  " LSP support
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
 
 call plug#end()
 
@@ -108,6 +101,9 @@ let g:LanguageClient_serverCommands = {
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 set completeopt-=preview
+
+" vimtex
+let g:tex_flavor = 'latex'
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
