@@ -166,8 +166,8 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/i3wallpaper.jpg
 # No borders or title bar
 new_window pixel 1
 
-# Use Spanish keyboard layout
-exec "setxkbmap -layout es"
+# Set up US keyboard layout
+exec "setxkbmap -layout us"
 
 # Enable redshift to soften screen colors depending on the time of the day
 exec --no-startup-id redshift

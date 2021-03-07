@@ -65,4 +65,8 @@
     "update.mode": "manual",
     "debug.allowBreakpointsEverywhere": true,
     "editor.scrollBeyondLastLine": false,
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.clang_format_fallbackStyle": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false
 }
