@@ -159,6 +159,8 @@ bar {
 
 # Lock screen binding
 bindsym $alt+Control+l exec ~/scripts/i3pixlock.sh
+# Lock screen after suspend action like lid close (https://wiki.archlinux.org/index.php/Power_management#xss-lock)
+exec --no-startup-id xss-lock -- ~/scripts/i3pixlock.sh
 
 # Set wallpaper
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/i3wallpaper.jpg
