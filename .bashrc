@@ -22,7 +22,6 @@ export EDITOR=vim               # Default editor
 # Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias gs='git status'
 alias sudo='sudo '
 alias pacopt='~/scripts/pacopt.sh'
 alias python='python3'
@@ -83,11 +82,10 @@ function weather {
 # Load fzf bashrc
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Add alias of function fuck from the thefuck script
-eval $(thefuck --alias)
-
 # Add pyenv to PATH
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
+export STRIPE_TOKEN="sk_test_51Lw3jqCct5bXJ5O8wIxnT3gHtUsxSC4RzNLI42HXhL0DPdXKE2Q05ARWahobLDpRXwremesQQA6EIE8YHHzGWEGl000dxH3LTM"

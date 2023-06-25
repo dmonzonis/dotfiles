@@ -32,7 +32,6 @@ export EDITOR=vim
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vi='vim'
-alias gs='git status'
 alias sudo='sudo '
 alias pacopt='~scripts/pacopt.sh'
 
@@ -65,5 +64,4 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-
-eval $(thefuck --alias)
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
